@@ -1,0 +1,209 @@
+import React, { Component } from 'react';
+import {View, Text, Image, ScrollView, TouchableNativeFeedback, StyleSheet} from 'react-native';
+import {Container, Icon, Button, Form, Item, Input, Label} from 'native-base';
+import {Column as Col, Row} from 'react-native-flexbox-grid'
+
+class BankPayment extends Component {
+
+    static navigationOptions = ({navigation}) => ({
+        headerLeft: null,
+        headerTitle: <TouchableNativeFeedback
+                        onPress={()=>navigation.goBack()}>
+                        <View style={{padding: 10, width: '90%', borderWidth: 1, borderColor: 'lightgrey', borderRadius: 3, marginLeft: 18}}>
+                            <Text style={{color: 'black', fontSize: 14, alignSelf: 'center'}}>Ganti Metode Pembayaran</Text>
+                        </View>
+                     </TouchableNativeFeedback>,
+        headerStyle: {
+            elevation: 0,
+            borderWidth: 1,
+            borderColor: 'lightgrey',
+        }
+    })
+
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         image: this.props.navigation.getParam('image'),
+         price: this.props.navigation.getParam('price'),
+         name: this.props.navigation.getParam('name')
+      }
+    }
+    
+    handleBayar = () => {
+        this.props.dispatch(deleteCart())
+        .then(result => {
+            this.props.navigation.navigate('Home')
+        })
+    }
+
+    render() {
+        return (
+            <Container>
+                <ScrollView>
+                    <View style={styles.viewDetail}>
+                        <Row size={12}>
+                            <Col sm={6}>
+                                <Text style={styles.total}>Rp {this.state.price}</Text>
+                            </Col>
+                            <Col sm={6}>
+                                <Text style={styles.detail}>Detail Tagihan</Text>
+                            </Col>
+                        </Row>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.viewTunai}>
+                            <Row size={12}>
+                                <Col sm={6}>
+                                    <Text style={styles.gerai}>Transfer {this.state.name}</Text>
+                                </Col>
+                                <Col sm={6}>
+                                    <Image
+                                        resizeMode='contain'
+                                        style={styles.geraiImage}
+                                        source={{uri: this.state.image}}
+                                    />
+                                </Col>
+                            </Row>
+                        </View>
+                        <View style={styles.viewTutorial}>
+                           <Form>
+                               <Item stackedLabel>
+                                   <Label style={{fontSize: 12}}>No. Rekening Anda</Label>
+                                   <Input style={{fontSize: 12}} keyboardType='numeric'/>
+                               </Item>
+                               <Text style={{marginLeft: 15}}>Masukan nomor rekening sesuai buku tabungan</Text>
+                               <Item stackedLabel>
+                                   <Label style={{fontSize: 12}}>Nama Pemilik Rekening</Label>
+                                   <Input style={{fontSize: 12}} />
+                               </Item>
+                               <Text style={{marginLeft: 15}}>Masukan nama pemilik rekening sesuai buku tabungan</Text>
+                           </Form>
+                           <View flex={1} padding={10} marginLeft={8}>
+                               <View flexDirection='row'>
+                                    <Text>jika melalui teller, isi 
+                                        <Text style={{fontWeight: '500'}}>Nama Pemilik Rekening</Text> 
+                                        dengan nama Penyetor dan
+                                        <Text style={{fontWeight: '500'}}>Nomor Rekening</Text>
+                                    </Text>
+                               </View>
+                           </View>
+                           <View flex={1} padding={10} marginLeft={8}>
+                                <Text>Demi keamanan transaksi Anda, pastikan untuk 
+                                    <Text style={{fontWeight: '500'}}>tidak menginformasikan bukti dan data pembayaran kepada pihak manapun kecuali Tokopedia</Text>
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+                </ScrollView>
+                <View style={styles.viewFooter}>
+                    <Button block
+                        onPress={()=>this.handleBayar()}
+                        style={styles.footerButton}>
+                        <Text style={{color: 'white'}}>Bayar</Text>
+                    </Button>
+                </View>
+            </Container>
+        )
+    }
+}
+
+const styles = StyleSheet.create({
+    footerButton: {
+        backgroundColor: 'orangered', 
+        height: 50, 
+        width: '95%', 
+        alignSelf: 'center', 
+        borderRadius: 3
+    },
+    viewFooter: {
+        position: 'absolute', 
+        bottom: 0, 
+        padding: 10, 
+        width: '100%', 
+        backgroundColor: 'white', 
+        borderTopWidth: 1, 
+        borderColor: 'lightgrey'
+    },
+    textDetail: {
+        color: '#42b549'
+    },
+    textDaftar: {
+        fontSize: 15
+    },
+    daftar: {
+        flexDirection: 'row', 
+        padding: 10, 
+        borderTopWidth: 1, 
+        borderColor: 'lightgrey'
+    },
+    tutorial: {
+        marginLeft: 4, 
+        fontSize: 15
+    },
+    tutorialImage: {
+        height: 200, 
+        width: '100%', 
+        alignSelf: 'center'
+    },
+    viewTutorial: {
+        padding: 10, 
+        flex: 1
+    },
+    geraiImage: {
+        width: 70, 
+        height: 40, 
+        alignSelf: 'flex-end', 
+    },
+    gerai: {
+        marginTop: 7, 
+        fontSize: 15,
+        marginLeft: 10
+    },
+    viewTunai: {
+        flexDirection: 'row', 
+        padding: 10, 
+        borderBottomWidth: 1, 
+        borderColor: 'lightgrey', 
+        height: 60
+    },
+    container: {
+        borderWidth: 1, 
+        borderColor: 'lightgrey', 
+        marginTop: 15, 
+        margin: 15, 
+        marginBottom: 85
+    },
+    arrow: {
+        fontSize: 18,
+        color: 'grey',
+        marginTop: 2,
+        color: 'black',
+    },
+    viewDetail: {
+        backgroundColor: 'white', 
+        flexDirection: 'row', 
+        padding: 17, 
+        width: '92%', 
+        alignSelf: 'center', 
+        marginTop: 10, 
+        borderBottomWidth: 1,
+        borderTopWidth: 1,
+        borderLeftWidth: 1,
+        borderRightWidth: 1,
+        borderColor: 'lightgrey', 
+        borderRadius: 3,
+        elevation: 2
+    },
+    detail: {
+        alignSelf: 'flex-end', 
+        fontSize: 13, 
+        color: '#42b549', 
+        marginTop: 2.5
+    },
+    total: {
+        color: 'black', fontSize: 17
+    }
+})
+
+export default BankPayment;

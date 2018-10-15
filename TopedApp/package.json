@@ -1,0 +1,40 @@
+{
+  "name": "projek",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.2",
+    "babel-preset-react-native": "^4.0.1",
+    "native-base": "^2.8.0",
+    "react": "16.4.1",
+    "react-native": "^0.55.4",
+    "react-native-elevated-view": "0.0.6",
+    "react-native-flexbox-grid": "^0.3.2",
+    "react-native-shadow": "^1.2.2",
+    "react-native-super-grid": "^2.4.3",
+    "react-native-svg": "^7.0.3",
+    "react-native-swiper": "^1.5.13",
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "^2.16.0",
+    "react-navigation-material-bottom-tabs": "^0.4.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "jest": "23.5.0",
+    "react-test-renderer": "16.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
