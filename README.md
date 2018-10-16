@@ -52,4 +52,4 @@ https://youtu.be/xs6cSXYDsA4
 
 ![https://arkademy.com](http://www.arkademy.com/asset/images/ico_logo.png)
 
-Author: Muhammad AJi Raharjo
+Author: Muhammad Aji Raharjo
