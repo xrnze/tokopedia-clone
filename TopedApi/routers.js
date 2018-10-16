@@ -71,6 +71,18 @@ router.get('/cart/:id', (req, res) => {
   })
 })
 
+router.put('/cart/:id', (req, res) => {
+  Cart.findOneAndUpdate({_id: req.params.id}, req.body, {new: true})
+  .then(result => {
+    res.status(200).send(result)
+  })
+  .catch(err => {
+    res.status(500).json({
+      error: err
+    })
+  })
+})
+
 router.delete('/cart/:id', (req, res) => {
   Cart.findOneAndDelete({_id: req.params.id})
   .then(result => res.status(200).send(result))

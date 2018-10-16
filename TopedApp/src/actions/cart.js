@@ -40,3 +40,14 @@ export function deleteCart(){
         })
     }
 }
+
+export function updateCart(value){
+    return{
+        type: 'UPDATE_CART',
+        payload: axios({
+            method: 'PUT',
+            url: `http://192.168.0.18:5000/api/cart/${value._id}`,
+            data: value
+        })
+    }
+}

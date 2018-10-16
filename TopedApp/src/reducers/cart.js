@@ -53,7 +53,16 @@ const cart = function(state = initialState, action){
         case 'DELETE_CART_REJECTED':
             return {...state, fetching: false, fetched: false, error: action.payload}
             break;
-
+        
+        case 'UPDATE_CART_PENDING':
+            return {...state, fetching: true};
+            break;
+        case 'UPDATE_CART_FULFILLED':
+            return {...state, fetching: false, fetched: true, data: action.payload.data};
+            break;
+        case 'UPDATE_CART_REJECTED':
+            return {...state, fetching: false, fetched: false, error: action.payload.data}
+        
         default:
             return state;
             break;

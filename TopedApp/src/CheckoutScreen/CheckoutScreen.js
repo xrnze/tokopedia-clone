@@ -30,6 +30,21 @@ class CheckoutScreen extends Component {
       };
     };
     
+    handeDonasi = () => {
+        this.setState({
+            checked: !this.state.checked,
+        })
+        if (this.state.checked == false) {
+            this.setState({
+                totalPrice: this.state.totalPrice + 100
+            })
+        }else{
+            this.setState({
+                totalPrice: this.state.totalPrice - 100
+            })
+        }
+    }
+
     componentDidMount = () => {
         this.props.dispatch(fetchCart())
         .then(result => {
@@ -259,16 +274,16 @@ class CheckoutScreen extends Component {
                             </View>
                         )}
                     />
-                    <TouchableNativeFeedback onPress={() => this.setState({checked: !this.state.checked})}>
+                    <TouchableNativeFeedback onPress={() => this.handeDonasi()}>
                         <View style={styles.viewDonasi}>
-                            <CheckBox value={this.state.checked} onChange={() => this.setState({checked: !this.state.checked})}/>
+                            <CheckBox value={this.state.checked} onChange={() => this.handeDonasi()}/>
                             <Text style={styles.textDonasi}>TopDonasi100 </Text>
                             <Icon name='information-variant' type='MaterialCommunityIcons' style={styles.iconDonasi}/>
                         </View>
                     </TouchableNativeFeedback>
                     <View style={styles.viewTotal}>
                         {
-                            (this.state.kurir == false) ?   
+                            (this.state.kurir == false ) ?   
                             <View>     
                                 <Row size={12}>
                                     <Col sm={6}>
@@ -283,7 +298,8 @@ class CheckoutScreen extends Component {
                                         </View>
                                     </Col>
                                 </Row>
-                            </View> :
+                            </View> 
+                            :
                             <View>     
                                 <Row size={12} marginBottom={10}>
                                     <Col sm={6}>

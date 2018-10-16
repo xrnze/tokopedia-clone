@@ -110,7 +110,7 @@ class TunaiPayment extends Component {
 
 const styles = StyleSheet.create({
     footerButton: {
-        backgroundColor: 'orangered', 
+        backgroundColor: '#FF2400', 
         height: 50, 
         width: '95%', 
         alignSelf: 'center', 

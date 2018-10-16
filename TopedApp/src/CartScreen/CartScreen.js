@@ -3,7 +3,7 @@ import {View, Text, ScrollView, TouchableNativeFeedback, StyleSheet, FlatList, I
 import {Icon, Container, Left, Body, Right, Button} from 'native-base';
 import { connect } from 'react-redux';
 
-import {fetchCart, deleteItem} from '../actions/cart';
+import {fetchCart, deleteItem, updateCart} from '../actions/cart';
 
 class CartScreen extends Component {
     
@@ -17,11 +17,22 @@ class CartScreen extends Component {
     })
 
    state = {
-       number: 1
+       number: 0,
+       price: 0,
+       id: '',
    }
 
     componentDidMount = () => {
       this.props.dispatch(fetchCart())
+      .then(result => {
+        this.props.cart.cart.map((data) => (
+            this.setState({
+                number: data.qty,
+                price: data.price,
+                id: data._id
+            })
+        ))
+      })
     };
     
     _keyExtractor = (item, index) => item._id;
@@ -29,17 +40,31 @@ class CartScreen extends Component {
     handlePlus = () => {
         this.setState({
             number: this.state.number + 1,
+            price: this.state.price * 2
         })
     }
 
     handleMinus = () => {
         this.setState({
-            order: this.state.number - 1,
+            number: this.state.number - 1,
+            price: this.state.price / 2
         })
     }
 
     handleDelete = (id) => {
         this.props.dispatch(deleteItem(id))
+    }
+
+    handleCheckout = () => {
+        const value = {
+            _id: this.state.id,
+            qty: this.state.number,
+            price: this.state.price
+        }
+        this.props.dispatch(updateCart(value))
+        .then(result => {
+            this.props.navigation.navigate('Checkout')
+        })
     }
 
     deleteConfirm = (id) => {
@@ -78,6 +103,7 @@ class CartScreen extends Component {
                         <FlatList
                             data={this.props.cart.cart}
                             keyExtractor={this._keyExtractor}
+                            extraData={this.state}
                             renderItem = 
                             {({item}) => (
                                 <View style={styles.viewItem}>
@@ -102,7 +128,7 @@ class CartScreen extends Component {
                                             />
                                             <View style={styles.viewName}>
                                                 <Text style={styles.textName}>{item.productId.name}</Text>
-                                                <Text style={styles.textPrice}>Rp {item.price}</Text>
+                                                <Text style={styles.textPrice}>Rp {item.productId.price}</Text>
                                             </View>
                                         </View>
                                         <View style={styles.viewQty}>
@@ -115,7 +141,7 @@ class CartScreen extends Component {
                                                     type='EvilIcons'  style={styles.iconQty} />
                                                 </TouchableNativeFeedback>
                                                 <View style={styles.viewNumber}>
-                                                    <Text style={{color: 'black', alignSelf: 'center'}}>{item.qty}</Text>
+                                                    <Text style={{color: 'black', alignSelf: 'center'}}>{this.state.number}</Text>
                                                 </View>
                                                 <TouchableNativeFeedback
                                                   onPress={() => this.handlePlus()}>
@@ -141,17 +167,13 @@ class CartScreen extends Component {
                 {
                     (this.props.cart.cart.length > 0) ?
                     <View style={styles.footer}>
-                        {
-                                this.props.cart.cart.map((data, key) => (
-                                    <View key={key}>
-                                        <Text>Total Harga ({data.qty} Barang)</Text>
-                                        <Text key={key} style={styles.textPrice}>Rp {data.price}</Text>
-                                    </View>
-                                ))
-                            }
+                        <View >
+                            <Text>Total Harga ({this.state.number} Barang)</Text>
+                            <Text style={styles.textPrice}>Rp {this.state.price}</Text>
+                        </View>
                         <Right>
                             <Button block
-                            onPress={() => this.props.navigation.navigate('Checkout')}
+                            onPress={() => this.handleCheckout()}
                             style={styles.footerButton}>
                                 <Text style={styles.buttonText}>Checkout</Text>
                             </Button>

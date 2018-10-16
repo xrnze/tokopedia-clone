@@ -1,0 +1,218 @@
+{ 
+    "_id" : ObjectId("5bbcad399f2cda2e2c6fb1fa"), 
+    "name" : "ROG SCAR II GL504GM", 
+    "price" : NumberInt(28396000), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/8/24/1070405/1070405_92b24973-6154-4951-9b7f-a74b0788bf48_700_700.jpg", 
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/9/14/4979529/4979529_f4756f1c-63e6-4dde-aeed-97bf45941803_700_393.jpg"
+    ], 
+    "terkirim" : NumberInt(0), 
+    "dilihat" : NumberInt(28), 
+    "asuransi" : "Ya", 
+    "berat" : "9kg", 
+    "transaksi" : "0", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "Laptop", 
+    "etalase" : "Laptop ASUS", 
+    "deskripsi" : "ASUS ROG GL504GM ES175T ", 
+    "nama_penjual" : "Kesbor Mall", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2017/3/29/180025/180025_90b05fdc-f036-45e1-9149-ccbd96e22393.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bbd7a03bff6551d682e63d5"), 
+    "name" : "MSI Z370 GAMING PRO CARBON (Intel Z370, LGA 1151, DDR4) Coffeelake", 
+    "price" : NumberInt(3350000), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/8/27/30439344/30439344_6724c727-dd41-484f-afa6-fdc968f8103e_1024_819.png", 
+        "https://www.wootware.co.za/media/catalog/product/cache/1/image/1024x768/9df78eab33525d08d6e5fb8d27136e95/1/3/13-144-107-v06.jpg"
+    ], 
+    "terkirim" : NumberInt(0), 
+    "dilihat" : NumberInt(5), 
+    "asuransi" : "Ya", 
+    "berat" : "2kg", 
+    "transaksi" : "0", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "Motherboard", 
+    "etalase" : "Motherboard Intel", 
+    "deskripsi" : "Supports 8th Gen Intel CoreTM / Pentium Celeron processors for LGA 1151 socket", 
+    "nama_penjual" : "TRI-X Mall", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2018/4/11/30439344/30439344_6451f0b4-6164-4058-b4ad-109289d7c066.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bbd7c71bff6551d682e63d7"), 
+    "name" : "Rock - Zircon - Powerful BASS - IEM / Earphone with Mic - Hitam", 
+    "price" : NumberInt(155000), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2017/4/7/7563406/7563406_59c0bfdd-d4b1-4089-b240-80fe68b8e1ef_800_800.jpg", 
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2017/4/10/436776/436776_c415a934-4ce6-474d-9191-f9a76df3231a_790_600.jpg"
+    ], 
+    "terkirim" : NumberInt(2600), 
+    "dilihat" : NumberInt(7562), 
+    "asuransi" : "Opsional", 
+    "berat" : "200gr", 
+    "transaksi" : "96", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "Earphone", 
+    "etalase" : "Earphone Rock", 
+    "deskripsi" : "One of the best earphone di market, dengan bass yang powerful namun tidak sember dan menutupi vokal. Rock Zircon menyajikan vokal dengan presisi dan detail yang baik, serta treble yang crispy serenyah keripik kentang.", 
+    "nama_penjual" : "Audio Kere Hore", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2016/12/8/1002853/1002853_0b5f0733-3873-49fe-9ece-bc8ca8e2db8d.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bbd815fbff6551d682e63d8"), 
+    "name" : "Eartips Memory Foam T400 - Per Paket - 4pcs - Merah- Biru", 
+    "price" : NumberInt(22000), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2017/4/29/7563406/7563406_245bccc3-1d8b-43ba-acaf-e2cd1f6ad432_1000_1000.jpg", 
+        "https://s0.bukalapak.com/img/5849316962/w-300/7563406_dece66e6_e6f1_4a08_ae29_3386a0ddcfd2_1000_640.jpg"
+    ], 
+    "terkirim" : NumberInt(688), 
+    "dilihat" : NumberInt(2500), 
+    "asuransi" : "Opsional", 
+    "berat" : "50gr", 
+    "transaksi" : "98", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "Earphone", 
+    "etalase" : "Eartips", 
+    "deskripsi" : "Memory foam dikenal mempunya sealing yang lebih baik dari Eartips yang terbuat dari Silicone sehingga terjadi peningkatan secara kuantitas dan kualitas pada bass dan noise/suara dari luar teredam dengan baik", 
+    "nama_penjual" : "Audio Kere Hore", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2016/12/8/1002853/1002853_0b5f0733-3873-49fe-9ece-bc8ca8e2db8d.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bbd840d3b3ce84068e68a2e"), 
+    "name" : "Xiaomi Mi A2 RAM 4GB Internal 64GB Garansi Resmi 1 Tahun!", 
+    "price" : NumberInt(3650000), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/10/1/3004791/3004791_de1aeadd-4695-4afe-97f5-c4c990d15a31_1000_1000.jpg", 
+        "https://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-a2-2.jpg"
+    ], 
+    "terkirim" : NumberInt(0), 
+    "dilihat" : NumberInt(1520), 
+    "asuransi" : "Ya", 
+    "berat" : "50gr", 
+    "transaksi" : "0", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "Handphone", 
+    "etalase" : "Handphone Xiaomi", 
+    "deskripsi" : "Chipset Qualcomm SDM660 Snapdragon 660,GPU Adreno 512, Internal 64 GB, 4 GB RAM", 
+    "nama_penjual" : "Oceanic", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2016/1/24/390491/390491_7580b0ac-a75b-487d-8b8d-d3f61104ebb1.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bbd896260ad60687473676e"), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/9/6/6517003/6517003_c8ad5e3a-e1dd-4581-ac18-fa08f49192bb_1040_1040.jpg", 
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/3/29/6517003/6517003_96d8f4e9-fc5f-4d12-8ba5-52885f8fbe4a_630_420.jpg"
+    ], 
+    "name" : "SteelSeries Arctis PRO RGB with GAME DAC", 
+    "price" : NumberInt(3660000), 
+    "terkirim" : NumberInt(5), 
+    "dilihat" : NumberInt(258), 
+    "asuransi" : "Opsional", 
+    "berat" : "1kg", 
+    "transaksi" : "100", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "Headset", 
+    "etalase" : "Headset", 
+    "deskripsi" : "The GameDAC dedicated DAC and headphone amp transforms any PS4 or PC into a high-performance audio source by bypassing the low fidelity, poor quality DACs found in typical console controllers, USB headsets, and PC sound cards", 
+    "nama_penjual" : "Sylar Gaming Solution", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2018/6/17/768171/768171_f89d700e-96ad-482a-b47c-f76d9e21a81c.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bbd8a9260ad60687473676f"), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/7/24/6517003/6517003_9a9d2c6f-3e81-4dc0-9735-4de881a071b5_1040_1040.jpg", 
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/7/24/6517003/6517003_f70b1c45-90c7-4801-bc8b-158c8f2a91ef_1000_667.jpg", 
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/7/24/6517003/6517003_807a070a-1e4b-433e-b972-16395496e213_700_700.jpg"
+    ], 
+    "name" : "IKBC F87 TKL PBT RGB Cherry MX - Merah", 
+    "price" : NumberInt(1525000), 
+    "terkirim" : NumberInt(0), 
+    "dilihat" : NumberInt(80), 
+    "asuransi" : "Opsional", 
+    "berat" : "1.8kg", 
+    "transaksi" : "0", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "Keyboard", 
+    "etalase" : "Keyboard", 
+    "deskripsi" : "Perfect for gamers, delivering a fast and precise response with great tactile feedback and It makes double-tapping keys easy.A durable keyboard with PBT Keycaps & Double shot injection molding keycaps with laser etching printing for crystal clear backlighting as well as Ergonomic Keycap Shapes designed to provide you with durable, long lasting and comfortable typing experience.9 Multiple-modes LED RGB Backlighting, Color-Flashing Speed and Time Machine count down, and onboard memory to take your customized macros and lighting settings anywhere you go.", 
+    "nama_penjual" : "Sylar Gaming Solution", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2018/6/17/768171/768171_f89d700e-96ad-482a-b47c-f76d9e21a81c.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bbdb77860ad606874736770"), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/5/30/30439344/30439344_f811f511-d1f6-48c8-9b33-92ee721f39a0_700_525.jpg", 
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/5/30/30439344/30439344_8827d223-aafd-427e-b417-a33dba139ef3_700_525.jpg", 
+        "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/5/30/30439344/30439344_6780d71c-f243-4940-96f4-2ea02274515a_800_600.jpg"
+    ], 
+    "name" : "Samsung SSD 960 EVO M.2 500GB MZ-V6E500BW", 
+    "price" : NumberInt(3500000), 
+    "terkirim" : NumberInt(0), 
+    "dilihat" : NumberInt(6), 
+    "asuransi" : "Opsional", 
+    "berat" : "500gr", 
+    "transaksi" : "0", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "SSD", 
+    "etalase" : "SSD", 
+    "deskripsi" : "Read Speed Up to 3,200 MB/sec, Write Speed Up to 1,800 MB/sec", 
+    "nama_penjual" : "TRI-X Computer", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2018/4/11/30439344/30439344_6451f0b4-6164-4058-b4ad-109289d7c066.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bbea8d5daff291f70979edd"), 
+    "images" : [
+        "https://ecs7.tokopedia.net/img/cache/700/catalog/2017/9/4/17027990/17027990_c1ffe78d-eebb-41a3-89cd-52579ff90668.png", 
+        "https://ecs7.tokopedia.net/img/cache/700/catalog/2017/9/4/17027990/17027990_9b597a80-3361-420d-9a54-50416361f7b6.jpg"
+    ], 
+    "name" : "Processor INTEL - CORE I9 7900X Skylake-X LGA 2066 10 Core CPU", 
+    "price" : NumberInt(16330000), 
+    "terkirim" : NumberInt(0), 
+    "dilihat" : NumberInt(215), 
+    "asuransi" : "Opsional", 
+    "berat" : "200gr", 
+    "transaksi" : "0", 
+    "kondisi" : "Baru", 
+    "pemesananMin" : "1", 
+    "kategori" : "Processor", 
+    "etalase" : "Processor Intel", 
+    "deskripsi" : "Unlocked Multiplier, Fan Not Included,Intel Core i9, Clock / Turbo: 3.3GHz / 4.5GHz, 23.75MB Total Cache,Deca Core, Skylake-X, 140W, LGA2066", 
+    "nama_penjual" : "TRI-X Computer", 
+    "avatar_penjual" : "https://ecs7.tokopedia.net/img/cache/100-square/shops-1/2018/4/11/30439344/30439344_6451f0b4-6164-4058-b4ad-109289d7c066.jpg.webp", 
+    "lokasi_penjual" : "DKI Jakarta", 
+    "reputasi_penjual" : "https://ecs7.tokopedia.net/img/repsys/gold-1.gif", 
+    "__v" : NumberInt(0)
+}

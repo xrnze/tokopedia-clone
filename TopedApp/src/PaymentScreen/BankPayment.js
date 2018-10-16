@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import {View, Text, Image, ScrollView, TouchableNativeFeedback, StyleSheet} from 'react-native';
 import {Container, Icon, Button, Form, Item, Input, Label} from 'native-base';
 import {Column as Col, Row} from 'react-native-flexbox-grid'
+import { connect } from 'react-redux';
+
+import { deleteCart } from '../actions/cart';
 
 class BankPayment extends Component {
 
@@ -79,20 +82,20 @@ class BankPayment extends Component {
                                </Item>
                                <Text style={{marginLeft: 15}}>Masukan nama pemilik rekening sesuai buku tabungan</Text>
                            </Form>
-                           <View flex={1} padding={10} marginLeft={8}>
+                           <View flex={1} padding={10} marginLeft={6}>
                                <View flexDirection='row'>
                                     <Text>jika melalui teller, isi 
-                                        <Text style={{fontWeight: '500'}}>Nama Pemilik Rekening</Text> 
+                                        <Text style={{fontWeight: '500'}}> Nama Pemilik Rekening </Text> 
                                         dengan nama Penyetor dan
-                                        <Text style={{fontWeight: '500'}}>Nomor Rekening</Text>
+                                        <Text style={{fontWeight: '500'}}> Nomor Rekening</Text>
                                     </Text>
                                </View>
                            </View>
-                           <View flex={1} padding={10} marginLeft={8}>
+                           <View flex={1} padding={10} marginLeft={6}>
                                 <Text>Demi keamanan transaksi Anda, pastikan untuk 
-                                    <Text style={{fontWeight: '500'}}>tidak menginformasikan bukti dan data pembayaran kepada pihak manapun kecuali Tokopedia</Text>
+                                    <Text style={{fontWeight: '500'}}> tidak menginformasikan bukti dan data pembayaran kepada pihak manapun kecuali Tokopedia</Text>
                                 </Text>
-                            </View>
+                            </View>     
                         </View>
                     </View>
                 </ScrollView>
@@ -110,7 +113,7 @@ class BankPayment extends Component {
 
 const styles = StyleSheet.create({
     footerButton: {
-        backgroundColor: 'orangered', 
+        backgroundColor: '#FF2400', 
         height: 50, 
         width: '95%', 
         alignSelf: 'center', 
@@ -206,4 +209,10 @@ const styles = StyleSheet.create({
     }
 })
 
-export default BankPayment;
+const mapStateToProps = (state) => {
+    return {
+        cart: state.cart
+    }
+}
+
+export default connect(mapStateToProps)(BankPayment);

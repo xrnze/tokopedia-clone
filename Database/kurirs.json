@@ -1,0 +1,28 @@
+{ 
+    "_id" : ObjectId("5bc1c31d943f8d4fd0ffc784"), 
+    "waktu" : "1 hari", 
+    "name" : "JNE", 
+    "price" : NumberInt(18000), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bc1c644d896630b48f32c40"), 
+    "waktu" : "1 hari", 
+    "name" : "TIKI", 
+    "price" : NumberInt(15000), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bc1c64ed896630b48f32c41"), 
+    "waktu" : "1 hari", 
+    "name" : "POS Indonesia", 
+    "price" : NumberInt(18000), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5bc3654b67626b5b483708a1"), 
+    "waktu" : "1 hari", 
+    "name" : "SiCepat", 
+    "price" : NumberInt(13000), 
+    "__v" : NumberInt(0)
+}
