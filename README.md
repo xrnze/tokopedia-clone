@@ -40,10 +40,15 @@ $ cd tokopedia-clone/TopedApp
 $ npm install
 $ react-native run-android
 ```
+## Video
+
+https://youtu.be/xs6cSXYDsA4
+
 
 ## Powered By 
 
-![https://dumbways.id](https://avatars2.githubusercontent.com/u/34464790?s=200&v=4)
+![https:/
+/dumbways.id](https://avatars2.githubusercontent.com/u/34464790?s=200&v=4)
 
 ![https://arkademy.com](http://www.arkademy.com/asset/images/ico_logo.png)
 
